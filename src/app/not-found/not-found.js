@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import CursorComponent from '@/components/CursorComponent';
 import { motion } from 'framer-motion';
-import "../app/globals.css";
+import "../globals.css";
 
 export default function NotFound() {
   const [currentFont, setCurrentFont] = useState(0);
