@@ -6,7 +6,7 @@ import { Bloom, EffectComposer, N8AO, SSAO } from "@react-three/postprocessing";
 import { BallCollider, Physics, RigidBody, CylinderCollider } from "@react-three/rapier";
 import * as THREE from "three";
 
-THREE.ColorManagement.legacyMode = false;
+THREE.ColorManagement.enabled = true;
 const baubleMaterial = new THREE.MeshLambertMaterial({ color: "#FF7EA4", emissive: "#FF7EA4" });
 const kisuMaterial = new THREE.MeshStandardMaterial({
   metalness: 0.75,
