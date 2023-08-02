@@ -2,8 +2,6 @@
 import React from 'react'
 import { useEffect,useState,useRef } from 'react';
 import AnimatedTextCharacter from './Anchar';
-import { motion } from 'framer-motion';
-import AnimatedDiv from './Animateddiv';
 
 function Scroll() {
   const [isComponentMounted, setIsComponentMounted] = useState(true);
@@ -55,7 +53,7 @@ function Scroll() {
       <div className='spaceup'>
         
       </div>
-     <div className='spaceleft'>
+     <div className='spaceleft' style={{scrollSnapType:"none",WebkitOverflowScrolling:"touch",overscrollBehavior:"none"}}>
      <AnimatedTextCharacter text="OUR PAST PROJECTS"/>
      </div>
         <section>    
@@ -66,95 +64,63 @@ function Scroll() {
 
                       <div className="pahz" id='section1'>
                           <div className="hzc">
-                          <AnimatedDiv y={-5} animateY={0} >
                              <img src="./Portfolio/woffles.jpg" alt="water" className="imc"/>
-                          </AnimatedDiv >
-                          <AnimatedDiv y={5} animateY={0} delay={0.1} >
                             <img src="./Portfolio/wofflescolor.jpg" alt="water" className="imc"/>
-                          </AnimatedDiv>
                           </div>
                           <div className='hzc'>    
-                          <AnimatedDiv x={5} animateX={0} delay={0.15}>
                         <img src="./Portfolio/wofflesdetail.jpg" alt="aiu" className='imc'/>
-                          </AnimatedDiv>
                           </div>
                         <div className='texthz'>  
                         <h2>Woffles</h2>
-                        <AnimatedDiv>
                         <p>
                           Un restaurante de waffles estaba buscando una nueva página web. Nos reunimos con el cliente y discutimos sus necesidades y objetivos. Desarrollamos un diseño y creamos una página web utilizando las tecnologías más recientes y rápidas. La página web fue optimizada para motores de búsqueda y ayudó a aumentar las ventas del restaurante en un 30%. 📈
                         </p>
-                        </AnimatedDiv>
                         </div>
                         </div>  
 
                       
                         <div className="pahz" id='section1'>
                           <div className="hzc">
-                          <AnimatedDiv y={-5} >
 
                              <img src="./Portfolio/billsp.jpg" alt="water" className="imc"/>
-                          </AnimatedDiv>
-                          <AnimatedDiv y={5} delay={.1} animateY={0}>
                             <img src="./Portfolio/billspco.jpg" alt="water" className="imc"/>
-                          </AnimatedDiv>
                             </div>
                             <div className="hzc">
-                            <AnimatedDiv y={-5} delay={.15} animateY={0}>
                          <img src="./Portfolio/billspl.jpg" alt="aiu" className='imc'/>
-                            </AnimatedDiv>
-                            <AnimatedDiv y={5} animateY={0}>
                         <img src="./Portfolio/billspgrey.jpg" alt="aiu" className='imc'/>
-                            </AnimatedDiv>
                           </div>
                         <div className='texthz'>  
                         <h2>Bill splitter</h2>
-                        <AnimatedDiv>
                         <p>
                         Una empresa nos contactó para crear un sistema que ayudase a sus empleados a dividir las cuentas. Desarrollamos un prototipo del sistema que era fácil de usar, seguro y confiable. El cliente quedó satisfecho con el resultado final y el sistema fue un gran éxito. Estamos orgullosos de haber ayudado al cliente a crear un sistema que les ayudará a ahorrar tiempo y dinero.                        </p>
-                        </AnimatedDiv>
                         </div>
                         </div>  
 
                        
                         <div className="pahz" id='section1'>
                           <div className="hzc">
-                            <AnimatedDiv y={-5} animateY={0}>
                              <img src="./Portfolio/System.jpg" alt="water" className="imc"/>
-                            </AnimatedDiv >
-                            <AnimatedDiv y={5} delay={.1} animateY={0}>
                             <img src="./Portfolio/sale system.jpg" alt="water" className="imc"/>
-                            </AnimatedDiv>
                           </div>
                         <div className='texthz'>  
                         <h2>Sales System</h2> 
-                        <AnimatedDiv>
                         <p>Creamos un sistema para administrar cuentas, ventas, pagos y facturas. El sistema es fácil de usar, seguro y confiable, disponible en computadoras y teléfonos inteligentes. El cliente quedó satisfecho con el resultado final y el sistema fue un gran éxito. Estamos orgullosos de haber ayudado a crear un sistema que ayudará a ahorrar tiempo y dinero.</p>
-                        </AnimatedDiv>
                         </div>
                         </div>  
                         
                         <div className="pahz" id='section1'>
                           <div className="hzc">
-                          <AnimatedDiv y={-5} animateY={0}>
                              <img src="./Portfolio/imagigids.jpg" alt="water" className="imc"/>
-                          </AnimatedDiv>
 
-                          <AnimatedDiv y={5} delay={0.1} animateY={0}>
                             <img src="./Portfolio/imagikco.jpg" alt="water" className="imc"/>
-                          </AnimatedDiv>
                           </div>
                           <div className='hzc'>
-                          <AnimatedDiv x={5} animateX={0} delay={0.15}>
                          <img src="./Portfolio/Imagikids.jpg" alt="aiu" className='imc'/>
-                          </AnimatedDiv>
                           </div>
                         <div className='texthz'>  
                         <h2>Imagi Kids</h2>
-                        <AnimatedDiv>
                         <p>
                         Creamos una aplicación para una empresa que les ayudaba a encontrar niñeras. La aplicación era fácil de usar, segura y confiable, y estaba disponible en teléfonos inteligentes y computadoras. El cliente quedó satisfecho con el resultado final y la aplicación fue un gran éxito. Estamos orgullosos de haber ayudado al cliente a crear una herramienta que les ayudará a encontrar la niñera perfecta para sus hijos.                        </p>
-                        </AnimatedDiv>
                         </div>
                         </div>  
 
