@@ -11,22 +11,15 @@ function Scroll() {
   const [stopScrollX, setStopScrollX] = useState(false);
   const [stopScrollY, setStopScrollY] = useState(false);
 
-  const transform = (section) => {
-    const offsetTop = section.parentElement.offsetTop;
-    const scrollSection = section.querySelector('.scroll_section');
-    const scrollY = window.scrollY;
-    const percentage = Math.min(
-      Math.max((scrollY - offsetTop) / window.innerHeight, 0),
-      12
-    );
-    scrollSection.style.transform = `translate3d(${-percentage * 100}vw, 0, 0)`;
-  };
-
   useEffect(() => {
     // Function to handle the scroll event
     const handleScroll = () => {
       stickySectionsRef.current.forEach((section) => {
-        transform(section);
+        const offsetTop = section.parentElement.offsetTop;
+        const scrollSection = section.querySelector('.scroll_section');
+        const scrollY = window.scrollY;
+        const percentage = Math.min(Math.max((scrollY - offsetTop) / window.innerHeight, 0), 12);
+        scrollSection.style.transform = `translate3d(${-percentage * 100}vw, 0, 0)`;
       });
     };
 
@@ -56,7 +49,6 @@ function Scroll() {
       document.removeEventListener('touchmove', preventRubberBandScroll);
     };
   }, [isComponentMounted, stopScrollX, stopScrollY]);
-
 
   return (
       <>
