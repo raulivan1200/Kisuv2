@@ -1,95 +1,54 @@
-import Image from 'next/image'
-import styles from './page.module.css'
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+import Faq from "../components/Faq";
+import Form from "../components/Form";
+import Scroll from "../components/Horizontalscroll";
+import Cards from "../components/Cards.js"
+import CursorComponent from "../components/CursorComponent.js"
+import Foot from "../components/Foot"
+import BigText from "../components/Bigtext";
+import Head from "next/head";
+import Videosr from "@/components/Videosr";
+import Brutalcallus from "@/components/Brutalcallus";
+import Parabigtxt from "@/components/Parabigtxt";
+import DisableIOSRubberbandScroll from "@/components/DisableIOSRubberbandScroll";
+import { Model } from "@/components/Model";
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+const home = () => {
+  return ( 
+<>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+    <Head>
+    <meta
+  name="description"
+  />
+    <title>KISU</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="googlebot" content="noindex,nofollow" />
+    <meta name="google" content="nositelinkssearchbox" />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+    </Head>
+    <DisableIOSRubberbandScroll>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    <div >
+{/*
+  */ }
+    <div style={{position:"relative",height:"100vh",width:"100%"}}>
+      <Model/>
+  <BigText/>
+    </div>
+    <Parabigtxt/>
+    <CursorComponent/>
+    <Scroll/>
+    <Brutalcallus/>
+    <Cards/>
+    <Videosr/>
+      <Faq/>
+      <Form/>
+      <Foot/>
+    </div>
+    </DisableIOSRubberbandScroll>
+</>
+   );
 }
+ 
+export default home;

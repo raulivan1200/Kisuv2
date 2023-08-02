@@ -1,0 +1,313 @@
+.parentbt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Optional: If you want to limit the size of the centered div and hide any overflowing content */
+  overflow: hidden;
+}
+
+.childbt{
+  height: 80%;
+  width: 80%;
+  margin: 0;
+}
+.textmd{
+  height: 100% !important;
+  overflow: hidden !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 11em;
+  display: flex;
+  flex-direction: column;
+}
+.ksim {
+  position: absolute;
+  top: 100vh;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  max-width: 40%;
+  height: fit-content;
+  z-index: -1;
+}
+.ttex{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  gap: 36px;
+}
+
+
+
+/*scrolling text*/
+.progress {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--accent);
+    bottom: 100px;
+  }
+  
+  .parallax {
+    overflow: hidden;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100% !important;
+
+  }
+  
+  .parallax .scroller {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 64px;
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .parallax span {
+    display: block;
+    margin-right: 30px;
+  }
+  
+
+  .wordWrap {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: white;
+  }
+  @media screen and (max-width:400px) {
+    .textmd{
+      font-size: 1em !important;
+    }}
+  @media screen and (max-width:1200px) {
+    .textmd{
+      font-size: 15em;
+    }}
+@media screen and (max-width:769px) {
+  .scroller{
+    font-size: 2em !important;
+  }
+  .btcu{
+    font-size: 2.5em !important;
+    padding-bottom: 15%;
+  }
+  .cardana{
+    width: 80%;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .containerpb {
+    display: flex !important;
+    flex-direction: column;
+
+  }
+  .textmd{
+    font-size: 2.5em;
+
+  }
+  .parentbt{
+    flex-direction: column;
+  }
+  .ttex{
+    flex-direction: column;
+  }
+}
+
+.videoco{
+  padding-top: 10%;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.abbt{
+  position: absolute;
+  transform:rotate(10deg) translateX(60vw) translateY(-60vh) ;
+}
+.cardbt{
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  padding:10%;
+  width: 322px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px 0px rgba(88, 88, 88, 0.15), 0px 0px 12px 0px rgba(88, 88, 88, 0.10);
+}
+.wsbt{
+  width: 50vw;
+  padding-left: 10%;
+}
+.mu{
+  margin-top: -15%;
+}
+.bthh{
+  font-size: 5em !important;
+  height: fit-content;
+}
+@media screen and (max-width:400px) {
+  .bthh{
+    font-size: 1.5em !important;
+  }}
+  @media screen and (max-width:769px) {
+    .bthh{
+      font-size: 1.8em !important;
+    }}
+    .bthh{
+      font-size: 2em;
+    }
+@media screen and (max-width:1300px) {
+  
+  .pbtxrow{
+    flex-direction: column !important;
+  }
+  .cardbt{
+    width: 80%;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+  .abbt{
+    position: relative;
+    transform: none;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .parentbtr{
+    padding-top: 10%;
+    height: fit-content;
+  }
+  .wsbt{
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 0;
+
+  }
+  .videoco{
+    padding-top: 40%;
+    height: fit-content;
+    padding-bottom: 15%;
+  }
+}
+
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(36deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.anlg {
+  transform: rotate(0deg); /* Set the initial transform to 0deg */
+  transition: all transform 0.5s ease-out; /* Add a transition for smooth animation */
+}
+
+/* Apply the animation to the 'a' element on hover */
+.anlg:hover {
+  animation: rotate 0.5s ease-in-out infinite;
+  transform: rotate(0deg); /* Ensure the animation starts from 0deg on hover */
+}
+
+.pbtx{
+  height: fit-content;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  align-items: center;
+  text-align: center;
+  padding-top: 5%;
+  width: 100%;
+}
+
+.pbtxrow{
+  width: 100%;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 69px;
+  justify-content: center;
+  align-items: center;
+}
+.papb{
+  padding: 5% 0;
+}
+
+
+.cardana{
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40vh;
+  padding: 10%;
+  border-radius: 12px;
+  color: black;
+  box-shadow: 0px 4px 20px 0px rgba(88, 88, 88, 0.15), 0px 0px 12px 0px rgba(88, 88, 88, 0.10);
+}
+
+.containerpb { 
+  width: 90%;
+  position: relative; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr ;
+  gap: 5rem 5rem;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "c1 c2 c3 c4";
+    margin: 0;
+}
+
+.c1 { grid-area: c1; }
+
+.c2 { grid-area: c2; }
+
+.c3 { grid-area: c3; }
+
+.c4 { grid-area: c4; }
+
+.rempin{
+  background-color: var(--pink);
+  font-family: Eudoxus;
+}
+.c1, .c2, .c3, .c4 {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.btcu{
+  font-size: 6em ;
+}

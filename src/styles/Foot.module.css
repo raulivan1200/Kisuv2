@@ -1,0 +1,56 @@
+.footp{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden !important;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    position: relative;
+
+}
+.ftim{
+    position: absolute;
+}
+.logo{
+    width: 100vw;
+    height: fit-content;
+    overflow: hidden;
+}
+.bottomtxt{
+    position: absolute;
+bottom: 0;
+width: 100%;
+display: flex;
+justify-content: space-around;
+}
+.txtcen{
+display: flex;
+flex-direction: column;
+height: max-content;
+padding: 20% 0%;
+}
+.btf {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    padding: 0;
+    text-align: center;
+    font-size: 5em !important;
+    margin: 0;
+    bottom: 0;
+}
+
+.kim{
+    position: relative;
+    transform: translateY(-90vh) rotate(-15deg) scale(.5) translateX(-20vw);
+
+}
+@media screen and (max-width:769px) {
+    .kim{
+        transform: scale(.3) translateY(-145vh) rotate(-15deg);
+    }
+    .btf {
+        font-size: 1.5em !important;
+    }
+}

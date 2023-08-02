@@ -1,0 +1,52 @@
+.formh{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.formcon{
+    width: 100vw;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+.inputbody{
+    height: 30vh;
+    width: 80vw;
+    font-family: Eudoxus;
+    margin-bottom: 5%;
+}
+
+.butonform{
+    width: 20vw;
+
+}
+
+.ef{
+    width: 100%;
+    margin: 0;
+}
+.email{
+    font-family:Eudoxus;
+    width: 40vw;
+
+}
+@media screen and (max-width:769px) {
+.c{
+    width: 79.2vw;
+}
+.formcon{
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.butonform{
+    width: 80vw;
+}
+}
