@@ -11,8 +11,8 @@ const baubleMaterial = new THREE.MeshLambertMaterial({ color: "#FF7EA4", emissiv
 const kisuMaterial = new THREE.MeshStandardMaterial({
   metalness: 0.75,
   roughness: 0.15,
-  color: "#57AEF5",
-  emissive: "#57AEF5",
+  color: "#FF7EA4",
+  emissive: "#FF7EA4",
   envMapIntensity: 200,
 });
 const baubles = [...Array(50)].map(() => ({ scale: [0.75, 0.75, 1, 1, 1.25][Math.floor(Math.random() * 5)] }));
