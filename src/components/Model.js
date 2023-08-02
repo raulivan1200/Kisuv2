@@ -62,7 +62,7 @@ function Pointer({ vec = new THREE.Vector3() }) {
 }
 
 export const Model = () => (
-  <Canvas   style={{ height: "200vh", width: "100%", position: "absolute",zIndex:"99" }}  shadows gl={{ alpha: true, stencil: false, depth: false, antialias: false }} camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }} onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
+  <Canvas   style={{ height: "150vh", width: "100%", position: "absolute",zIndex:"99" }}  shadows gl={{ alpha: true, stencil: false, depth: false, antialias: false }} camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }} onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
     <ambientLight intensity={1} />
     <spotLight position={[20, 20, 25]} penumbra={1} angle={0.2} color="blue" castShadow shadow-mapSize={[512, 512]} />
     <directionalLight position={[0, 5, -4]} intensity={4} />
