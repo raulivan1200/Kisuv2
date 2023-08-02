@@ -15,7 +15,7 @@ function Scroll() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [30]);
+  }, []);
   
   const handleScroll = useCallback(() => {
     requestAnimationFrame(() => {
