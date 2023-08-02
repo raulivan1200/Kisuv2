@@ -10,6 +10,14 @@ function Scroll() {
   const [isComponentMounted, setIsComponentMounted] = useState(true);
   const stickySectionsRef = useRef([]);
 
+  const transform = (section) => {
+    const offsetTop = section.parentElement.offsetTop;
+    const scrollSection = section.querySelector('.scroll_section');
+    const scrollY = window.scrollY;
+    const percentage = Math.min(Math.max((scrollY - offsetTop) / window.innerHeight, 0), 12);
+    scrollSection.style.transform = `translate3d(${-percentage * 100}vw, 0, 0)`;
+  };
+
   useEffect(() => {
     // Function to handle the scroll event
     const handleScroll = () => {
@@ -19,9 +27,7 @@ function Scroll() {
     };
 
     // Query the DOM once during the initial render and store .sticky elements in stickySectionsRef
-    useEffect(() => {
-      stickySectionsRef.current = Array.from(document.querySelectorAll('.sticky'));
-    }, []);
+    stickySectionsRef.current = Array.from(document.querySelectorAll('.sticky'));
 
     // Add the scroll event listener
     window.addEventListener('scroll', handleScroll);
@@ -46,14 +52,6 @@ function Scroll() {
       document.removeEventListener('mousewheel', scroll);
     };
   }, [isComponentMounted]);
-
-  const transform = (section) => {
-    const offsetTop = section.parentElement.offsetTop;
-    const scrollSection = section.querySelector('.scroll_section');
-    const scrollY = window.scrollY;
-    const percentage = Math.min(Math.max((scrollY - offsetTop) / window.innerHeight, 0), 12);
-    scrollSection.style.transform = `translate3d(${-percentage * 100}vw, 0, 0)`;
-  };
 
   return (
       <>
