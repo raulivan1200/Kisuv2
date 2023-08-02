@@ -1,9 +1,8 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Environment, useGLTF } from "@react-three/drei";
-import { Bloom, EffectComposer, N8AO, SSAO } from "@react-three/postprocessing";
-import { BallCollider, Physics, RigidBody, CylinderCollider } from "@react-three/rapier";
+import { useGLTF } from "@react-three/drei";
+import { BallCollider, Physics, RigidBody } from "@react-three/rapier";
 import * as THREE from "three";
 
 THREE.ColorManagement.enabled = true;
@@ -62,7 +61,7 @@ function Pointer({ vec = new THREE.Vector3() }) {
 }
 
 export const Model = () => (
-  <Canvas   style={{ height: "150vh", width: "100%", position: "absolute",zIndex:"99" }}  shadows gl={{ alpha: true, stencil: false, depth: false, antialias: false }} camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }} onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
+  <Canvas  frameloop="demand" style={{ height: "150vh", width: "100%", position: "absolute",zIndex:"99" }}  shadows gl={{ alpha: true, stencil: false, depth: false, antialias: false }} camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }} onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
     <ambientLight intensity={1} />
     <spotLight position={[20, 20, 25]} penumbra={1} angle={0.2} color="blue" castShadow shadow-mapSize={[512, 512]} />
     <directionalLight position={[0, 5, -4]} intensity={4} />
@@ -73,10 +72,6 @@ export const Model = () => (
         <Bauble key={i} {...props} />
       ))}
     </Physics>
-    <EffectComposer disableNormalPass={false} multisampling={0}>
-      <Bloom luminanceThreshold={0} luminanceSmoothing={0.9} intensity={1} />
-      <N8AO color="pink" aoRadius={2} intensity={1} />
-      <SSAO />
-    </EffectComposer>
+
   </Canvas>
 );

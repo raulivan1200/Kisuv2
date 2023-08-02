@@ -1,45 +1,59 @@
-"use client";
+"use client"
+import React from 'react'
+import { useEffect,useState,useRef } from 'react';
 import AnimatedTextCharacter from './Anchar';
 import { motion } from 'framer-motion';
 import AnimatedDiv from './Animateddiv';
-import React, { useEffect, useRef, useCallback } from 'react';
+
 
 function Scroll() {
-  const stickySectionsRef = useRef(null);
+  const [isComponentMounted, setIsComponentMounted] = useState(true);
+  const stickySectionsRef = useRef([]);
 
   useEffect(() => {
-    stickySectionsRef.current = document.querySelectorAll('.sticky');
-    handleScroll(); // Initial setup
-    window.addEventListener('scroll', handleScroll, { passive: true });
-  
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-  
-  const handleScroll = useCallback(() => {
-    requestAnimationFrame(() => {
-      const stickySections = stickySectionsRef.current;
-      stickySections.forEach((section) => {
-        const offsetTop = section.parentElement.offsetTop;
-        const scrollSection = section.querySelector('.scroll_section');
-        let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
-        percentage = percentage < 0 ? 0 : percentage > 1200 ? 1200 : percentage;
-        scrollSection.style.transform = `translate3d(${-percentage}vw, 0, 0)`;
+    // Function to handle the scroll event
+    const handleScroll = () => {
+      stickySectionsRef.current.forEach((section) => {
+        transform(section);
       });
-    });
-  }, []);
-  
-  
-    const transform = (section) => {
-      const offsetTop = section.parentElement.offsetTop;
-      console.log(offsetTop);
-      const scrollSection = section.querySelector('.scroll_section');
-      let percentage = ((window.scrollY - offsetTop) / window.innerHeight)*100;
-      percentage = percentage <0? 0 : percentage > 1200 ? 1200: percentage;
-      scrollSection.style.transform = `translate3d(${-percentage}vw, 0, 0)`;
     };
 
+    // Query the DOM once during the initial render and store .sticky elements in stickySectionsRef
+    useEffect(() => {
+      stickySectionsRef.current = Array.from(document.querySelectorAll('.sticky'));
+    }, []);
+
+    // Add the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Function to disable rubber band scrolling
+    const scroll = function (e) {
+      if (stopScrollX || stopScrollY) {
+        e.preventDefault();
+        e.stopPropagation();
+        window.scroll(scrollToX, scrollToY);
+      }
+    };
+
+    // Add the mousewheel event listener
+    if (isComponentMounted) {
+      document.addEventListener('mousewheel', scroll, { passive: false });
+    }
+
+    // Clean up the event listeners on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('mousewheel', scroll);
+    };
+  }, [isComponentMounted]);
+
+  const transform = (section) => {
+    const offsetTop = section.parentElement.offsetTop;
+    const scrollSection = section.querySelector('.scroll_section');
+    const scrollY = window.scrollY;
+    const percentage = Math.min(Math.max((scrollY - offsetTop) / window.innerHeight, 0), 12);
+    scrollSection.style.transform = `translate3d(${-percentage * 100}vw, 0, 0)`;
+  };
 
   return (
       <>
@@ -57,63 +71,95 @@ function Scroll() {
 
                       <div className="pahz" id='section1'>
                           <div className="hzc">
+                          <AnimatedDiv y={-5} animateY={0} >
                              <img src="./Portfolio/woffles.jpg" alt="water" className="imc"/>
+                          </AnimatedDiv >
+                          <AnimatedDiv y={5} animateY={0} delay={0.1} >
                             <img src="./Portfolio/wofflescolor.jpg" alt="water" className="imc"/>
+                          </AnimatedDiv>
                           </div>
                           <div className='hzc'>    
+                          <AnimatedDiv x={5} animateX={0} delay={0.15}>
                         <img src="./Portfolio/wofflesdetail.jpg" alt="aiu" className='imc'/>
+                          </AnimatedDiv>
                           </div>
                         <div className='texthz'>  
                         <h2>Woffles</h2>
+                        <AnimatedDiv>
                         <p>
                           Un restaurante de waffles estaba buscando una nueva página web. Nos reunimos con el cliente y discutimos sus necesidades y objetivos. Desarrollamos un diseño y creamos una página web utilizando las tecnologías más recientes y rápidas. La página web fue optimizada para motores de búsqueda y ayudó a aumentar las ventas del restaurante en un 30%. 📈
                         </p>
+                        </AnimatedDiv>
                         </div>
                         </div>  
 
                       
                         <div className="pahz" id='section1'>
                           <div className="hzc">
+                          <AnimatedDiv y={-5} >
 
                              <img src="./Portfolio/billsp.jpg" alt="water" className="imc"/>
+                          </AnimatedDiv>
+                          <AnimatedDiv y={5} delay={.5} animateY={0}>
                             <img src="./Portfolio/billspco.jpg" alt="water" className="imc"/>
+                          </AnimatedDiv>
                             </div>
                             <div className="hzc">
+                            <AnimatedDiv y={-5} delay={.5} animateY={0}>
                          <img src="./Portfolio/billspl.jpg" alt="aiu" className='imc'/>
+                            </AnimatedDiv>
+                            <AnimatedDiv y={5} animateY={0}>
                         <img src="./Portfolio/billspgrey.jpg" alt="aiu" className='imc'/>
+                            </AnimatedDiv>
                           </div>
                         <div className='texthz'>  
                         <h2>Bill splitter</h2>
+                        <AnimatedDiv>
                         <p>
                         Una empresa nos contactó para crear un sistema que ayudase a sus empleados a dividir las cuentas. Desarrollamos un prototipo del sistema que era fácil de usar, seguro y confiable. El cliente quedó satisfecho con el resultado final y el sistema fue un gran éxito. Estamos orgullosos de haber ayudado al cliente a crear un sistema que les ayudará a ahorrar tiempo y dinero.                        </p>
+                        </AnimatedDiv>
                         </div>
                         </div>  
 
                        
                         <div className="pahz" id='section1'>
                           <div className="hzc">
+                            <AnimatedDiv y={-5} animateY={0}>
                              <img src="./Portfolio/System.jpg" alt="water" className="imc"/>
+                            </AnimatedDiv >
+                            <AnimatedDiv y={5} delay={.1} animateY={0}>
                             <img src="./Portfolio/sale system.jpg" alt="water" className="imc"/>
+                            </AnimatedDiv>
                           </div>
                         <div className='texthz'>  
                         <h2>Sales System</h2> 
+                        <AnimatedDiv>
                         <p>Creamos un sistema para administrar cuentas, ventas, pagos y facturas. El sistema es fácil de usar, seguro y confiable, disponible en computadoras y teléfonos inteligentes. El cliente quedó satisfecho con el resultado final y el sistema fue un gran éxito. Estamos orgullosos de haber ayudado a crear un sistema que ayudará a ahorrar tiempo y dinero.</p>
+                        </AnimatedDiv>
                         </div>
                         </div>  
                         
                         <div className="pahz" id='section1'>
                           <div className="hzc">
+                          <AnimatedDiv y={-5} animateY={0}>
                              <img src="./Portfolio/imagigids.jpg" alt="water" className="imc"/>
+                          </AnimatedDiv>
 
+                          <AnimatedDiv y={5} delay={0.1} animateY={0}>
                             <img src="./Portfolio/imagikco.jpg" alt="water" className="imc"/>
+                          </AnimatedDiv>
                           </div>
                           <div className='hzc'>
+                          <AnimatedDiv x={5} animateX={0} delay={0.15}>
                          <img src="./Portfolio/Imagikids.jpg" alt="aiu" className='imc'/>
+                          </AnimatedDiv>
                           </div>
                         <div className='texthz'>  
                         <h2>Imagi Kids</h2>
+                        <AnimatedDiv>
                         <p>
                         Creamos una aplicación para una empresa que les ayudaba a encontrar niñeras. La aplicación era fácil de usar, segura y confiable, y estaba disponible en teléfonos inteligentes y computadoras. El cliente quedó satisfecho con el resultado final y la aplicación fue un gran éxito. Estamos orgullosos de haber ayudado al cliente a crear una herramienta que les ayudará a encontrar la niñera perfecta para sus hijos.                        </p>
+                        </AnimatedDiv>
                         </div>
                         </div>  
 
