@@ -11,15 +11,22 @@ function Scroll() {
 
   useEffect(() => {
     // Function to handle the scroll event
-    const handleScroll = () => {
-      stickySectionsRef.current.forEach((section) => {
-        const offsetTop = section.parentElement.offsetTop;
-        const scrollSection = section.querySelector('.scroll_section');
-        const scrollY = window.scrollY;
-        const percentage = Math.min(Math.max((scrollY - offsetTop) / window.innerHeight, 0), 12);
-        scrollSection.style.transform = `translate3d(${-percentage * 100}vw, 0, 0)`;
-      });
-    };
+
+
+const handleScroll = () => {
+  stickySectionsRef.current.forEach((section) => {
+    const offsetTop = section.parentElement.offsetTop;
+    const scrollSection = section.querySelector('.scroll_section');
+    const scrollY = window.scrollY;
+    const percentage = Math.min(
+      Math.max((scrollY - offsetTop) / window.innerHeight, 0),
+      12
+    );
+    const easing = 'ease-out';
+    scrollSection.style.transform = `translate3d(${-percentage * 100}vw, 0, 0)`;
+    scrollSection.style.transition = `transform 0.3s ${easing}`;
+  });
+};
 
     // Query the DOM once during the initial render and store .sticky elements in stickySectionsRef
     stickySectionsRef.current = Array.from(document.querySelectorAll('.sticky'));
