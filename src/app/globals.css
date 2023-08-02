@@ -10,6 +10,7 @@
 }
 html, body {
   -webkit-overflow-scrolling: none;
+  scroll-behavior: smooth;
 }
 body{
   -webkit-overflow-scrolling: auto;
