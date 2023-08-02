@@ -10,26 +10,12 @@ import Head from "next/head";
 import Videosr from "@/components/Videosr";
 import Brutalcallus from "@/components/Brutalcallus";
 import Parabigtxt from "@/components/Parabigtxt";
-import DisableIOSRubberbandScroll from "@/components/DisableIOSRubberbandScroll";
 import { Model } from "@/components/Model";
 
 const home = () => {
   return ( 
 <>
-
-    <Head>
-    <meta
-  name="description"
-  />
-    <title>KISU</title>
-    <meta name="robots" content="noindex,nofollow" />
-    <meta name="googlebot" content="noindex,nofollow" />
-    <meta name="google" content="nositelinkssearchbox" />
-
-    </Head>
-    <DisableIOSRubberbandScroll>
-
-    <div >
+    <div>
 {/*
   */ }
     <div style={{position:"relative",height:"100vh",width:"100%"}}>
@@ -46,7 +32,6 @@ const home = () => {
       <Form/>
       <Foot/>
     </div>
-    </DisableIOSRubberbandScroll>
 </>
    );
 }

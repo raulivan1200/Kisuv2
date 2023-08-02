@@ -15,7 +15,7 @@ const kisuMaterial = new THREE.MeshStandardMaterial({
   emissive: "#FF7EA4",
   envMapIntensity: 200,
 });
-const baubles = [...Array(50)].map(() => ({ scale: [0.75, 0.75, 1, 1, 1.25][Math.floor(Math.random() * 5)] }));
+const baubles = [...Array(20)].map(() => ({ scale: [0.75, 0.75, 1, 1, 1.25][Math.floor(Math.random() * 5)] }));
 
 function Bauble({ vec = new THREE.Vector3(), scale, r = THREE.MathUtils.randFloatSpread }) {
   const { nodes } = useGLTF("/kisu-transformed.glb");
@@ -40,8 +40,8 @@ function Bauble({ vec = new THREE.Vector3(), scale, r = THREE.MathUtils.randFloa
   return (
     <RigidBody linearDamping={0.75} angularDamping={0.15} friction={0.2} position={[r(20), r(20) - 25, r(20) - 10]} ref={api} colliders={false} dispose={null}>
       <BallCollider args={[scale]} />
-      <mesh castShadow scale={12.5 * scale} position={[0, 0, -1.8 * scale]} geometry={nodes.Curve003.geometry} material={baubleMaterial} />
-      <mesh castShadow scale={12.5 * scale} position={[0, 0, -1.8 * scale]} geometry={nodes.Curve003_1.geometry} material={kisuMaterial} />
+      <mesh castShadow scale={30 * scale} position={[0, 0, -1.8 * scale]} geometry={nodes.Curve003.geometry} material={baubleMaterial} />
+      <mesh castShadow scale={30 * scale} position={[0, 0, -1.8 * scale]} geometry={nodes.Curve003_1.geometry} material={kisuMaterial} />
     </RigidBody>
   );
 }
