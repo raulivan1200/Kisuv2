@@ -5,16 +5,20 @@ import AnimatedTextCharacter from './Anchar';
 import { motion } from 'framer-motion';
 import AnimatedDiv from './Animateddiv';
 
-
 function Scroll() {
   const [isComponentMounted, setIsComponentMounted] = useState(true);
   const stickySectionsRef = useRef([]);
+  const [stopScrollX, setStopScrollX] = useState(false);
+  const [stopScrollY, setStopScrollY] = useState(false);
 
   const transform = (section) => {
     const offsetTop = section.parentElement.offsetTop;
     const scrollSection = section.querySelector('.scroll_section');
     const scrollY = window.scrollY;
-    const percentage = Math.min(Math.max((scrollY - offsetTop) / window.innerHeight, 0), 12);
+    const percentage = Math.min(
+      Math.max((scrollY - offsetTop) / window.innerHeight, 0),
+      12
+    );
     scrollSection.style.transform = `translate3d(${-percentage * 100}vw, 0, 0)`;
   };
 
@@ -33,25 +37,26 @@ function Scroll() {
     window.addEventListener('scroll', handleScroll);
 
     // Function to disable rubber band scrolling
-    const scroll = function (e) {
-      if (stopScrollX || stopScrollY) {
+    const preventRubberBandScroll = function (e) {
+      if ((stopScrollX || stopScrollY) && isComponentMounted) {
         e.preventDefault();
         e.stopPropagation();
-        window.scroll(scrollToX, scrollToY);
       }
     };
 
-    // Add the mousewheel event listener
+    // Add the touchmove event listener for preventing rubber band scrolling on touch devices
     if (isComponentMounted) {
-      document.addEventListener('mousewheel', scroll, { passive: false });
+      document.body.style.overscrollBehavior = 'none';
+      document.addEventListener('touchmove', preventRubberBandScroll, { passive: false });
     }
 
     // Clean up the event listeners on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      document.removeEventListener('mousewheel', scroll);
+      document.removeEventListener('touchmove', preventRubberBandScroll);
     };
-  }, [isComponentMounted]);
+  }, [isComponentMounted, stopScrollX, stopScrollY]);
+
 
   return (
       <>
@@ -98,12 +103,12 @@ function Scroll() {
 
                              <img src="./Portfolio/billsp.jpg" alt="water" className="imc"/>
                           </AnimatedDiv>
-                          <AnimatedDiv y={5} delay={.5} animateY={0}>
+                          <AnimatedDiv y={5} delay={.1} animateY={0}>
                             <img src="./Portfolio/billspco.jpg" alt="water" className="imc"/>
                           </AnimatedDiv>
                             </div>
                             <div className="hzc">
-                            <AnimatedDiv y={-5} delay={.5} animateY={0}>
+                            <AnimatedDiv y={-5} delay={.15} animateY={0}>
                          <img src="./Portfolio/billspl.jpg" alt="aiu" className='imc'/>
                             </AnimatedDiv>
                             <AnimatedDiv y={5} animateY={0}>

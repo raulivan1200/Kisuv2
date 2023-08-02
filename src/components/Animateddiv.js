@@ -20,7 +20,7 @@ const AnimatedDiv = ({
     style={{height:"fit-content"}}
     initial={"initialState"}
     whileInView={"animateState"} // Using whileInView instead of animate
-    viewport={{ once: true, amount: .3 }}
+    viewport={{ once: true, amount: .1 }}
     transition={{ duration: duration || 0.5, delay: delay || 0, ease: "easeInOut" }}
     variants={{
       initialState: {

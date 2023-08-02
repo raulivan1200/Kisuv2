@@ -1,4 +1,7 @@
-
+html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: none;
+}
 :root {
   --pink: #FF7EA4;
   --blue: #57AEF5;
