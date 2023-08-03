@@ -2,7 +2,7 @@
 import React, { useRef, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
-import { BallCollider, Physics, RigidBody } from "@react-three/rapier";
+import { BallCollider, Physics, RigidBody ,InstancedRigidBodies} from "@react-three/rapier";
 import * as THREE from "three";
 
 THREE.ColorManagement.enabled = true;
@@ -64,9 +64,11 @@ export const Model = () => (
     <directionalLight position={[0, -15, -0]} intensity={4} color="green" />
     <Physics gravity={[0, 0, 0]}>
       <Pointer />
-      {baubles.map((props, i) => (
-        <Bauble key={i} {...props} />
-      ))}
+      <InstancedRigidBodies>
+        {baubles.map((props, i) => (
+          <Bauble key={i} {...props} />
+        ))}
+      </InstancedRigidBodies>
     </Physics>
 
   </Canvas>
