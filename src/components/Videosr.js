@@ -3,9 +3,7 @@ import styles from "../styles/BigText.module.css"
 function Videosr() {
   return (
     <div className={styles.videoco}>
-      <video width="100%" height="100%" autoPlay muted playsInline loop >
-      <source src="/showreel.mp4" type="video/mp4"/>
-      <iframe width="100%" height="100%" src="https://youtu.be/zawS019QfKg" frameborder="0" allow=" autoplay;" ></iframe>
+      <video width="100%" height="100%" autoPlay muted playsInline loop src="/showreel.mp4" type="video/mp4" >
       <h1>ready to start?</h1>
     </video>
     </div>
