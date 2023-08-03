@@ -2,6 +2,30 @@ html {
   overflow-y: scroll;
   -webkit-overflow-scrolling: none;
 }
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #333333 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #333333;
+    border-radius: 8px;
+    border: 4px solid #ffffff;
+  }
+
 :root {
   --pink: #FF7EA4;
   --blue: #57AEF5;
@@ -83,6 +107,7 @@ span{
   justify-content: space-between;
   align-items: center;
   padding: 0 0vw;
+  
 }
 *{
   cursor: none !important;
@@ -427,6 +452,14 @@ button:active {
   }
   h1{
     font-size: 1.4em !important;
+  }
+}
+@media screen and (max-width:1024px) and (min-width:770px) {
+  .texthz{
+    width: 45vw;
+  }
+  h2{
+    font-size: 1.1em;
   }
 }
 @media screen and (max-width:769px) {

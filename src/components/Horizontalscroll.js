@@ -4,56 +4,36 @@ import { useEffect,useState,useRef } from 'react';
 import AnimatedTextCharacter from './Anchar';
 
 function Scroll() {
-  const [isComponentMounted, setIsComponentMounted] = useState(true);
   const stickySectionsRef = useRef([]);
-  const [stopScrollX, setStopScrollX] = useState(false);
-  const [stopScrollY, setStopScrollY] = useState(false);
 
   useEffect(() => {
     // Function to handle the scroll event
+    const handleScroll = () => {
+      stickySectionsRef.current.forEach((section) => {
+        const offsetTop = section.parentElement.offsetTop;
+        const scrollSection = section.querySelector('.scroll_section');
+        const scrollY = window.scrollY;
+        const percentage = Math.min(
+          Math.max((scrollY - offsetTop) / window.innerHeight, 0),
+          50
+        );
+        const easing = 'ease-out';
+        scrollSection.style.transform = `translate3d(${-percentage * 100}vw, 0, 0)`;
+        scrollSection.style.transition = `transform 0.2s ${easing}`;
 
-
-const handleScroll = () => {
-  stickySectionsRef.current.forEach((section) => {
-    const offsetTop = section.parentElement.offsetTop;
-    const scrollSection = section.querySelector('.scroll_section');
-    const scrollY = window.scrollY;
-    const percentage = Math.min(
-      Math.max((scrollY - offsetTop) / window.innerHeight, 0),
-      12
-    );
-    const easing = 'ease-out';
-    scrollSection.style.transform = `translate3d(${-percentage * 100}vw, 0, 0)`;
-    scrollSection.style.transition = `transform 0.3s ${easing}`;
-  });
-};
+      });
+    };
 
     // Query the DOM once during the initial render and store .sticky elements in stickySectionsRef
     stickySectionsRef.current = Array.from(document.querySelectorAll('.sticky'));
 
     // Add the scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Function to disable rubber band scrolling
-    const preventRubberBandScroll = function (e) {
-      if ((stopScrollX || stopScrollY) && isComponentMounted) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-    };
-
-    // Add the touchmove event listener for preventing rubber band scrolling on touch devices
-    if (isComponentMounted) {
-      document.body.style.overscrollBehavior = 'none';
-      document.addEventListener('touchmove', preventRubberBandScroll, { passive: false });
-    }
-
-    // Clean up the event listeners on component unmount
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      document.removeEventListener('touchmove', preventRubberBandScroll);
     };
-  }, [isComponentMounted, stopScrollX, stopScrollY]);
+  }, []);
 
   return (
       <>

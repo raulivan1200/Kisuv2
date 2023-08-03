@@ -95,6 +95,22 @@
     .textmd{
       font-size: 1em !important;
     }}
+    @media screen and (max-width:1025px) and (min-width:769px) {
+      .textmd{
+        font-size: 7em !important;
+      }
+    .containerpb{
+      grid-template-rows: 1fr 1fr !important;
+      grid-template-columns: 1fr 1fr !important;
+      grid-template-areas: 
+      "c1 c2"
+      "c3 c4" !important;
+    }
+    .cardana{
+      height: fit-content !important;
+    }
+    }
+      
   @media screen and (max-width:1200px) {
     .textmd{
       font-size: 15em;
