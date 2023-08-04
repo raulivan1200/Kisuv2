@@ -380,7 +380,7 @@ button:active {
 .socialContainer {
   display: flex;
   overflow: hidden;
-  transition-duration: .3s;
+  transition-duration: all .3s ;
   text-decoration: none !important;
 
 }
@@ -407,7 +407,7 @@ button:active {
 
 .socialContainer:active {
   transform: scale(0.9);
-  transition-duration: .3s;
+  transition-duration:all .3s;
   text-decoration: none !important;
 
 }

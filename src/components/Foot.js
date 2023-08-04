@@ -37,7 +37,7 @@ function Foot() {
       </div>
     
       <div className={styles.txtcen}>
-        <a id='cursor-down' className='aref atb' href="">
+      <a id='cursor-down' className='aref atb' href="mailto:kisucontacto@gmail.com?subject=Interested%20in%20Getting%20a%20Web%20Page&body=Hello%20Kisu%20Web%20Design%20Agency,%0A%0AI'm interested in getting a web page for my company. Below are some details that might be helpful for you to provide a quote:%0A%0ACompany Name:%0ASector/Industry:%0ANumber of Employees:%0ABudget:%0A%0AThank%20you,%0A[Your Name]">
         <div style={{position:"relative", height:"15vh"}}>
         <h1 ref={textRef} className={styles.btf}>
             kisucontacto@gmail.com
