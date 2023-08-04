@@ -22,7 +22,7 @@ contentText="Our standard timeline is 3-6 weeks to complete a website, but this 
 />
 
 <ExpandCollapseSection
-toggleText="🌍 Do I have to be in Toronto to work with you?"
+toggleText="🌍 Do I have to go to your office?"
 contentText="No! We work with clients all over the world and can communicate by email, scheduled calls, and Zoom meetings."
 />
 

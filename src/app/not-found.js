@@ -3,7 +3,11 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import CursorComponent from '@/components/CursorComponent';
 import { motion } from 'framer-motion';
-
+export const metadata = {
+  title: 'KISU Not found',
+  description: 'Kisu web design studio ux uix',
+  content:'Kisu is an award-winning web design and development agency located in Mexico. With 5 years of experience, we focus on creating high-end and premium websites for businesses looking to make an impact online. Visit our website to view our stunning portfolio. Contact us to get in touch today 4496082929',
+}
 export default function NotFound() {
   const [currentFont, setCurrentFont] = useState(0);
   const [randomChars, setRandomChars] = useState([]);

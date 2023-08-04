@@ -1,8 +1,6 @@
 "use client"
 import { useEffect } from 'react';
 import { easeInOut, motion } from 'framer-motion';
-import Image from 'next/image';
-import logo from "../../public/kisuout.svg"
 const CursorComponent = () => {
   useEffect(() => {
     const cursor = document.querySelector('.cursor');

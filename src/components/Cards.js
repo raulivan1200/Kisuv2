@@ -19,7 +19,7 @@ function Cards() {
 </div>
 
     <a href=""  className={styles.lik}>
-    <h4 style={{textAlign:"center"}} >Agendar una llamada</h4>
+    <h4 style={{textAlign:"center"}} >Schedule a call</h4>
     </a>    
 </div>
     </div>  
@@ -29,15 +29,17 @@ function Cards() {
     <div className={styles.lsp}>
       
     <h4>50% to start working</h4>
+
     <p>
-    Diseño Web personalizado.<br/>
-Formulario Chat y Mapa.<br/>
-Fotografias de Stock.<br/>
-Tiempo de entrega de 3 a 4 semanas.<br/>
-4 sesiones de revisión disponibles.<br/>
-Integración de redes sociales.<br/>
-Sitio Responsive a moviles.
+      Custom Web Design.<br />
+      Chat and Map Form.<br />
+      Stock Photos.<br />
+      Delivery time of 3 to 4 weeks.<br />
+      4 revision sessions available.<br />
+      Integration of social media.<br />
+      Mobile Responsive Site.
     </p>
+
     </div>
     </div>
 </div>
@@ -56,7 +58,7 @@ Sitio Responsive a moviles.
    <button id="cursor-scale" className="btn"><span></span><p data-start="Get Started!" data-text="Call us!" data-title="Get Started!"></p></button>
 </div>
     <a href="" className={styles.likp}>
-    <h4 style={{textAlign:"center"}}>Agendar una llamada</h4>
+    <h4 style={{textAlign:"center"}}>Schedule a call</h4>
     </a>    
 </div>
     </div>  
@@ -64,16 +66,18 @@ Sitio Responsive a moviles.
     <hr/>
     <div className={styles.lsp}>
     <h4>50% to start working</h4>
-    <p>
-    Sitio responsive<br/>
-Website from Scratch<br/>
-Diseño Web personalizado.<br/>
-Formulario, Chat y Mapa<br/>
-Fotografias de Stock<br/>
-Tiempo de entrega de 3 a 4 semanas<br/>
-4 sesiones de revisión disponibles<br/>
-Integración de redes sociales
-    </p>
+
+      <p>
+          Responsive Site<br />
+          Website from Scratch<br />
+          Custom Web Design.<br />
+          Chat and Map Form<br />
+          Stock Photos<br />
+          Delivery time of 3 to 4 weeks<br />
+          4 revision sessions available<br />
+          Integration of social media
+        </p>
+
     </div>
     </div>
 </div>
@@ -92,7 +96,7 @@ Integración de redes sociales
    <button id="cursor-scale" className="btn"><span></span><p data-start="Get Started!" data-text="Call us!" data-title="Get Started!"></p></button>
 </div>
     <a href="" className={styles.likg}>
-    <h4 style={{textAlign:"center"}}>Agendar una llamada</h4>
+    <h4 style={{textAlign:"center"}}>Schedule a call</h4>
     </a>    
 </div>
     </div>  
@@ -100,18 +104,20 @@ Integración de redes sociales
     <hr/>
     <div className={styles.lsp}>
     <h4>50% to start working</h4>
-    <p>
-    Multipage <br/>
-CMS<br/>
-Animaciones 3D<br/>
-Custom Icons (6 icons)<br/>
-Diseño Web personalizado.<br/>
-Formulario Chat y Mapa<br/>
-Fotografias de Stock<br/>
-Tiempo de entrega de 3 a 4 semanas<br/>
-Revisiónes ilimitadas disponibles<br/>
-Integración de redes sociales<br/>
-    </p>
+
+       <p>
+          Multipage<br />
+          CMS<br />
+          3D Animations<br />
+          Custom Icons (6 icons)<br />
+          Custom Web Design.<br />
+          Chat and Map Form<br />
+          Stock Photos<br />
+          Delivery time of 3 to 4 weeks<br />
+          Unlimited revisions available<br />
+          Integration of social media<br />
+        </p>
+
     </div>    </div>  </div>
     </div>
 

@@ -185,7 +185,7 @@ span{
 .grow{
   animation: growAnimation .5s ease-in-out infinite !important; /* Apply the growAnimation with a duration of 3 seconds, ease-in-out timing, and infinite repeat */
   transform: scale(1); /* Initial scale */
-  background: var(--pink);
+  background: white;
   mix-blend-mode: difference; 
   border: none;
 }
@@ -193,6 +193,7 @@ span{
 .cursor-down{
   border: none;
   background-color: var(--pink);
+  mix-blend-mode: difference;
   transform: scale(1); /* Initial scale */
   animation: cursorDownAnimation 0.9s ease-in-out infinite !important; /* Apply the cursorDownAnimation with a duration of 0.5 seconds, ease-in-out timing, and infinite repeat */
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from "../styles/BigText.module.css"
 import AnimatedwText from './AnimatedwText'
-import AnimatedTextCharacter from './Anchar'
 
 function BigText() {
   return (

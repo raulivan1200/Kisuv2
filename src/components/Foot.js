@@ -37,7 +37,7 @@ function Foot() {
       </div>
     
       <div className={styles.txtcen}>
-        <a id='cursor-scale' className='aref atb' href="">
+        <a id='cursor-down' className='aref atb' href="">
         <div style={{position:"relative", height:"15vh"}}>
         <h1 ref={textRef} className={styles.btf}>
             kisucontacto@gmail.com

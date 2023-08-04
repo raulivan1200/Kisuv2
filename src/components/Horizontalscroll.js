@@ -60,7 +60,7 @@ function Scroll() {
                         <div className='texthz'>  
                         <h2>Woffles</h2>
                         <p>
-                          Un restaurante de waffles estaba buscando una nueva página web. Nos reunimos con el cliente y discutimos sus necesidades y objetivos. Desarrollamos un diseño y creamos una página web utilizando las tecnologías más recientes y rápidas. La página web fue optimizada para motores de búsqueda y ayudó a aumentar las ventas del restaurante en un 30%. 📈
+                        A waffle restaurant was in need of a new website, and we engaged in a thorough consultation to understand their requirements and goals. Employing the latest and fastest technologies, we crafted a cutting-edge design and developed a highly optimized website for search engines. As a result of our work, the restaurant experienced a remarkable 30% increase in sales. 📈 Our collaboration proved instrumental in their success, and we take pride in delivering impactful solutions to our clients.
                         </p>
                         </div>
                         </div>  
@@ -79,7 +79,8 @@ function Scroll() {
                         <div className='texthz'>  
                         <h2>Bill splitter</h2>
                         <p>
-                        Una empresa nos contactó para crear un sistema que ayudase a sus empleados a dividir las cuentas. Desarrollamos un prototipo del sistema que era fácil de usar, seguro y confiable. El cliente quedó satisfecho con el resultado final y el sistema fue un gran éxito. Estamos orgullosos de haber ayudado al cliente a crear un sistema que les ayudará a ahorrar tiempo y dinero.                        </p>
+                        A company sought our expertise to develop a bill-splitting system for their employees. Leveraging React, we created a visually captivating and intuitive UI/UX design with animated elements. Our focus on security resulted in implementing extra layers of protection, ensuring data integrity and confidentiality. The system's success led to enhanced operational efficiency, significant time and cost savings, and heightened user satisfaction. Our commitment to delivering cutting-edge solutions solidified our relationship with the client, making us a trusted partner for future endeavors.
+                        </p>
                         </div>
                         </div>  
 
@@ -91,7 +92,9 @@ function Scroll() {
                           </div>
                         <div className='texthz'>  
                         <h2>Sales System</h2> 
-                        <p>Creamos un sistema para administrar cuentas, ventas, pagos y facturas. El sistema es fácil de usar, seguro y confiable, disponible en computadoras y teléfonos inteligentes. El cliente quedó satisfecho con el resultado final y el sistema fue un gran éxito. Estamos orgullosos de haber ayudado a crear un sistema que ayudará a ahorrar tiempo y dinero.</p>
+                        <p>          
+                We developed a comprehensive account, sales, payment, and invoice management system. The user interface (UI) and user experience (UX) were carefully designed to ensure ease of use across both computers and smartphones, leveraging React and Next.js for optimal performance. The system's robust security and reliability delighted the client, leading to its resounding success. We take pride in delivering a transformative solution that saves time and money while providing a seamless experience for our valued clients. 💼
+                          </p>
                         </div>
                         </div>  
                         
@@ -107,7 +110,8 @@ function Scroll() {
                         <div className='texthz'>  
                         <h2>Imagi Kids</h2>
                         <p>
-                        Creamos una aplicación para una empresa que les ayudaba a encontrar niñeras. La aplicación era fácil de usar, segura y confiable, y estaba disponible en teléfonos inteligentes y computadoras. El cliente quedó satisfecho con el resultado final y la aplicación fue un gran éxito. Estamos orgullosos de haber ayudado al cliente a crear una herramienta que les ayudará a encontrar la niñera perfecta para sus hijos.                        </p>
+                        We developed a cutting-edge mobile and web application for a company, enabling them to find the perfect babysitters. Utilizing React Native, we ensured a seamless and user-friendly experience across both smartphones and computers, incorporating top-notch UX/UI designs. The application's robust security measures safeguarded sensitive data, ensuring trust and reliability. Through the implementation of CRUD functionalities, users could conveniently manage their nanny search process. The client's satisfaction with the final outcome was evident, as the application became a tremendous success. We take pride in having helped our client create a powerful tool to find the ideal caregiver for their children.
+                        </p>
                         </div>
                         </div>  
 
