@@ -32,11 +32,11 @@ function Spcards() {
     <p>
     Diseño Web personalizado.<br/>
 Formulario Chat y Mapa.<br/>
-Fotografias de Stock.<br/>
+Fotografías de Stock.<br/>
 Tiempo de entrega de 3 a 4 semanas.<br/>
 4 sesiones de revisión disponibles.<br/>
 Integración de redes sociales.<br/>
-Sitio Responsive a moviles.
+Sitio Responsive a móviles.
     </p>
     </div>
     </div>
@@ -69,7 +69,7 @@ Sitio Responsive a moviles.
 Website from Scratch<br/>
 Diseño Web personalizado.<br/>
 Formulario, Chat y Mapa<br/>
-Fotografias de Stock<br/>
+Fotografías de Stock<br/>
 Tiempo de entrega de 3 a 4 semanas<br/>
 4 sesiones de revisión disponibles<br/>
 Integración de redes sociales
@@ -83,7 +83,7 @@ Integración de redes sociales
         <div className={styles.cardcchild}>
     <div className={styles.up}>  
     <h1 className={styles.mlh}>Entreprise</h1>
-    <p className={styles.mlh}>Stores.</p>
+    <p className={styles.mlh}>Tiendas y Sistemas.</p>
 <div className={styles.spacex}>
     <h1 className={styles.mlh}>$25000</h1>
         <p className={styles.mlh}>50% de anticipo.</p>
@@ -107,9 +107,9 @@ Animaciones 3D<br/>
 Custom Icons (6 icons)<br/>
 Diseño Web personalizado.<br/>
 Formulario Chat y Mapa<br/>
-Fotografias de Stock<br/>
+Fotografías de Stock<br/>
 Tiempo de entrega de 3 a 4 semanas<br/>
-Revisiónes ilimitadas disponibles<br/>
+Revisiones ilimitadas disponibles<br/>
 Integración de redes sociales<br/>
     </p>
     </div>    </div>  </div>

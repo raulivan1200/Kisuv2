@@ -52,7 +52,7 @@ export default function Spform() {
 
       <div>  
       <h2>Detalles del proyecto:</h2>
-      <textarea className={styles.inputbody} {...register("body")} placeholder="Detalles del projecto"></textarea>
+      <textarea className={styles.inputbody} {...register("body")} placeholder="Detalles del proyecto"></textarea>
       </div>
 
           <div className={styles.butonform}>

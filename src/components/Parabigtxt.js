@@ -22,7 +22,7 @@ function Parabigtxt() {
   </div>
   <div className={styles.c2}>
     <div className={styles.cardana}>
-    <p> 📈 75% of consumers admit to making judgements on a company's credibility based on the company's website design</p>
+    <p> 📈 75% of consumers admit to making judgments on a company's credibility based on the company's website design</p>
     </div>
   </div>
   <div className={styles.c3}>

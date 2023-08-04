@@ -16,14 +16,14 @@ function Process() {
         2
         Programación:
         una vez definido el diseño general de la página, se comienzan con la programación
-        del codigo :
+        del código :
         tiempo de etapa no. 2 : 10 días hábiles
         una vez aprobado el diseño en imagen
         
         3
-        Correciones y ajustes:
+        Correcciones y ajustes:
         en esta etapa se deben corregir errores de escritura o información a si como cuestiones de contenido una vez visible al publico se podran realizar ajustes por 5 dias mas
-        Tiempo de etapa no. 3 : 5 dias hábiles.
+        Tiempo de etapa no. 3 : 5 Dias hábiles.
     </div>
   )
 }
