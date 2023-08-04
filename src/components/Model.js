@@ -8,7 +8,12 @@ import * as THREE from "three";
 THREE.ColorManagement.enabled = true;
 const baubleMaterial = new THREE.MeshLambertMaterial({ color: "#FF7EA4", emissive: "#FF7EA4" });
 const baubles = [...Array(20)].map(() => ({ scale: [0.75, 0.75, 1, 1, 1.25][Math.floor(Math.random() * 5)] }));
-
+const baubleGeometry = (nodes) => (
+  <>
+    <mesh scale={30} position={[0, 0, -1.8]} geometry={nodes.Curve003.geometry} material={baubleMaterial} />
+    <mesh scale={30} position={[0, 0, -1.8]} geometry={nodes.Curve003_1.geometry} material={baubleMaterial} />
+  </>
+);
 function Bauble({ vec = new THREE.Vector3(), scale, r = THREE.MathUtils.randFloatSpread }) {
   const { nodes } = useGLTF("/kisu-transformed.glb");
   const api = useRef(null);
@@ -30,11 +35,12 @@ function Bauble({ vec = new THREE.Vector3(), scale, r = THREE.MathUtils.randFloa
   }, []);
 
   return (
+    <instancedMesh>
     <RigidBody linearDamping={0.75} angularDamping={0.15} friction={0.2} position={[r(20), r(20) - 25, r(20) - 10]} ref={api} colliders={false} dispose={null}>
       <BallCollider args={[scale]} />
-      <mesh  scale={30 * scale} position={[0, 0, -1.8 * scale]} geometry={nodes.Curve003.geometry} material={baubleMaterial} />
-      <mesh  scale={30 * scale} position={[0, 0, -1.8 * scale]} geometry={nodes.Curve003_1.geometry} material={baubleMaterial} />
+      {baubleGeometry(nodes)}
     </RigidBody>
+    </instancedMesh>
   );
 }
 
