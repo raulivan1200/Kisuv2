@@ -2,6 +2,19 @@
 import React from 'react'
 import { useEffect,useState,useRef } from 'react';
 import AnimatedTextCharacter from '../Anchar';
+import Image from 'next/image';
+import Imkids from "../../../public/Portfolio/imagigids.jpg"
+import Imkidsf from "../../../public/Portfolio/imagikco.jpg"
+import Imkidsg from "../../../public/Portfolio/Imagikids.jpg"
+import Ssys from "../../../public/Portfolio/System.jpg"
+import Ssysf from "../../../public/Portfolio/sale system.jpg"
+import bills from "../../../public/Portfolio/billsp.jpg"
+import billsf from "../../../public/Portfolio/billspco.jpg"
+import billsg from "../../../public/Portfolio/billspl.jpg"
+import billsh from "../../../public/Portfolio/billspgrey.jpg"
+import woff from "../../../public/Portfolio/woffles.jpg"
+import woffh from "../../../public/Portfolio/wofflescolor.jpg"
+import woffg from "../../../public/Portfolio/wofflesdetail.jpg"
 
 function Spscroll() {
   const stickySectionsRef = useRef([]);
@@ -51,11 +64,12 @@ function Spscroll() {
 
                     <div className="pahz" id='section1'>
                         <div className="hzc">
-                           <img src="./Portfolio/woffles.jpg" alt="water" className="imc"/>
-                          <img src="./Portfolio/wofflescolor.jpg" alt="water" className="imc"/>
+                        <Image src={woff} alt="water" placeholder='blur'  width={0} height={0} sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                            <Image src={woffh} alt="water" placeholder='blur' width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
                         </div>
                         <div className='hzc'>    
-                      <img src="./Portfolio/wofflesdetail.jpg" alt="aiu" className='imc'/>
+                        <Image src={woffg} alt="aiu" placeholder='blur' width={0} height={0} sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, " className='imc'/>
+
                         </div>
                       <div className='texthz'>  
                       <h2>Woffles</h2>
@@ -67,17 +81,17 @@ function Spscroll() {
 
                     
                       <div className="pahz" id='section1'>
-                        <div className="hzc">
+                      <div className="hzc">
 
-                           <img src="./Portfolio/billsp.jpg" alt="water" className="imc"/>
-                          <img src="./Portfolio/billspco.jpg" alt="water" className="imc"/>
-                          </div>
-                          <div className="hzc">
-                       <img src="./Portfolio/billspl.jpg" alt="aiu" className='imc'/>
-                      <img src="./Portfolio/billspgrey.jpg" alt="aiu" className='imc'/>
-                        </div>
-                      <div className='texthz'>  
-                      <h2>Bill splitter</h2>
+<Image src={bills} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+<Image src={billsf} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+</div>
+<div className="hzc">
+<Image src={billsg} placeholder='blur' alt="aiu" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className='imc'/>
+<Image src={billsh} placeholder='blur' alt="aiu" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className='imc'/>
+</div>
+<div className='texthz'>  
+<h2>Bill splitter</h2>
                       <p>
                       Una empresa nos contactó para crear un sistema que ayudase a sus empleados a dividir las cuentas. Desarrollamos un prototipo del sistema que era fácil de usar, seguro y confiable. El cliente quedó satisfecho con el resultado final y el sistema fue un gran éxito. Estamos orgullosos de haber ayudado al cliente a crear un sistema que les ayudará a ahorrar tiempo y dinero.                        </p>
                       </div>
@@ -85,27 +99,27 @@ function Spscroll() {
 
                      
                       <div className="pahz" id='section1'>
-                        <div className="hzc">
-                           <img src="./Portfolio/System.jpg" alt="water" className="imc"/>
-                          <img src="./Portfolio/sale system.jpg" alt="water" className="imc"/>
-                        </div>
-                      <div className='texthz'>  
-                      <h2>Sales System</h2> 
+                      <div className="hzc">
+                             <Image src={Ssys} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                            <Image src={Ssysf} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                          </div>
+                        <div className='texthz'>  
+                        <h2>Sales System</h2> 
                       <p>Creamos un sistema para administrar cuentas, ventas, pagos y facturas. El sistema es fácil de usar, seguro y confiable, disponible en computadoras y teléfonos inteligentes. El cliente quedó satisfecho con el resultado final y el sistema fue un gran éxito. Estamos orgullosos de haber ayudado a crear un sistema que ayudará a ahorrar tiempo y dinero.</p>
                       </div>
                       </div>  
                       
                       <div className="pahz" id='section1'>
-                        <div className="hzc">
-                           <img src="./Portfolio/imagigids.jpg" alt="water" className="imc"/>
+                      <div className="hzc">
+                             <Image src={Imkids} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
 
-                          <img src="./Portfolio/imagikco.jpg" alt="water" className="imc"/>
-                        </div>
-                        <div className='hzc'>
-                       <img src="./Portfolio/Imagikids.jpg" alt="aiu" className='imc'/>
-                        </div>
-                      <div className='texthz'>  
-                      <h2>Imagi Kids</h2>
+                            <Image src={Imkidsf} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                          </div>
+                          <div className='hzc'>
+                         <Image src={Imkidsg} placeholder='blur' alt="aiu" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className='imc'/>
+                          </div>
+                        <div className='texthz'>  
+                        <h2>Imagi Kids</h2>
                       <p>
                       Creamos una aplicación para una empresa que les ayudaba a encontrar niñeras. La aplicación era fácil de usar, segura y confiable, y estaba disponible en teléfonos inteligentes y computadoras. El cliente quedó satisfecho con el resultado final y la aplicación fue un gran éxito. Estamos orgullosos de haber ayudado al cliente a crear una herramienta que les ayudará a encontrar la niñera perfecta para sus hijos.                        </p>
                       </div>
