@@ -25,7 +25,18 @@
   font-size: 11em;
   display: flex;
   flex-direction: column;
+  animation: fontChange 2s infinite;
+  transition: all ease-out;
 }
+@keyframes fontChange {
+  0% { font-family: 'Eudoxus', sans-serif; }
+  15% { font-family: 'Georgia', sans-serif; }
+  30% { font-family: 'Arial', sans-serif; }
+  45% { font-family: 'Helvetica', sans-serif; }
+  60% { font-family: 'Verdana', sans-serif; }
+  75% { font-family: 'Gt-America-EL', sans-serif; }
+}
+
 .ksim {
   position: absolute;
   top: 100vh;
