@@ -2,6 +2,20 @@
 import React from 'react'
 import { useEffect,useState,useRef } from 'react';
 import AnimatedTextCharacter from './Anchar';
+import Image from 'next/image';
+import Imkids from "../../public/Portfolio/imagigids.jpg"
+import Imkidsf from "../../public/Portfolio/imagikco.jpg"
+import Imkidsg from "../../public/Portfolio/Imagikids.jpg"
+import Ssys from "../../public/Portfolio/System.jpg"
+import Ssysf from "../../public/Portfolio/sale system.jpg"
+import bills from "../../public/Portfolio/billsp.jpg"
+import billsf from "../../public/Portfolio/billspco.jpg"
+import billsg from "../../public/Portfolio/billspl.jpg"
+import billsh from "../../public/Portfolio/billspgrey.jpg"
+import woff from "../../public/Portfolio/woffles.jpg"
+import woffh from "../../public/Portfolio/wofflescolor.jpg"
+import woffg from "../../public/Portfolio/wofflesdetail.jpg"
+
 
 function Scroll() {
   const stickySectionsRef = useRef([]);
@@ -51,11 +65,11 @@ function Scroll() {
 
                       <div className="pahz" id='section1'>
                           <div className="hzc">
-                             <img src="./Portfolio/woffles.jpg" alt="water" className="imc"/>
-                            <img src="./Portfolio/wofflescolor.jpg" alt="water" className="imc"/>
+                             <Image src={woff} alt="water" placeholder='blur'  width={0} height={0} sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                            <Image src={woffh} alt="water" placeholder='blur' width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
                           </div>
                           <div className='hzc'>    
-                        <img src="./Portfolio/wofflesdetail.jpg" alt="aiu" className='imc'/>
+                        <Image src={woffg} alt="aiu" placeholder='blur' width={0} height={0} sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, " className='imc'/>
                           </div>
                         <div className='texthz'>  
                         <h2>Woffles</h2>
@@ -69,12 +83,12 @@ function Scroll() {
                         <div className="pahz" id='section1'>
                           <div className="hzc">
 
-                             <img src="./Portfolio/billsp.jpg" alt="water" className="imc"/>
-                            <img src="./Portfolio/billspco.jpg" alt="water" className="imc"/>
+                             <Image src={bills} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                            <Image src={billsf} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
                             </div>
                             <div className="hzc">
-                         <img src="./Portfolio/billspl.jpg" alt="aiu" className='imc'/>
-                        <img src="./Portfolio/billspgrey.jpg" alt="aiu" className='imc'/>
+                         <Image src={billsg} placeholder='blur' alt="aiu" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className='imc'/>
+                        <Image src={billsh} placeholder='blur' alt="aiu" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className='imc'/>
                           </div>
                         <div className='texthz'>  
                         <h2>Bill splitter</h2>
@@ -87,8 +101,8 @@ function Scroll() {
                        
                         <div className="pahz" id='section1'>
                           <div className="hzc">
-                             <img src="./Portfolio/System.jpg" alt="water" className="imc"/>
-                            <img src="./Portfolio/sale system.jpg" alt="water" className="imc"/>
+                             <Image src={Ssys} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                            <Image src={Ssysf} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
                           </div>
                         <div className='texthz'>  
                         <h2>Sales System</h2> 
@@ -100,12 +114,12 @@ function Scroll() {
                         
                         <div className="pahz" id='section1'>
                           <div className="hzc">
-                             <img src="./Portfolio/imagigids.jpg" alt="water" className="imc"/>
+                             <Image src={Imkids} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
 
-                            <img src="./Portfolio/imagikco.jpg" alt="water" className="imc"/>
+                            <Image src={Imkidsf} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
                           </div>
                           <div className='hzc'>
-                         <img src="./Portfolio/Imagikids.jpg" alt="aiu" className='imc'/>
+                         <Image src={Imkidsg} placeholder='blur' alt="aiu" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className='imc'/>
                           </div>
                         <div className='texthz'>  
                         <h2>Imagi Kids</h2>
