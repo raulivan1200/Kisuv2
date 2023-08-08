@@ -503,7 +503,7 @@ button:active {
   }
 
   .hom{
-    display: none;
+    display: none !important;
   }
   .hod{
     display: inline;
