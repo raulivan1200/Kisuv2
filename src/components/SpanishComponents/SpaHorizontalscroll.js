@@ -64,11 +64,11 @@ function Spscroll() {
 
                     <div className="pahz" id='section1'>
                         <div className="hzc">
-                        <Image src={woff} alt="water" placeholder='blur'  width={0} height={0} sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
-                            <Image src={woffh} alt="water" placeholder='blur' width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                        <Image src={woff} alt="water" placeholder='blur'  width={0} height={0} sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                            <Image src={woffh} alt="water" placeholder='blur' width={0} height={0}  sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
                         </div>
                         <div className='hzc'>    
-                        <Image src={woffg} alt="aiu" placeholder='blur' width={0} height={0} sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, " className='imc'/>
+                        <Image src={woffg} alt="aiu" placeholder='blur' width={0} height={0} sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, " className='imc'/>
 
                         </div>
                       <div className='texthz'>  
@@ -83,12 +83,12 @@ function Spscroll() {
                       <div className="pahz" id='section1'>
                       <div className="hzc">
 
-<Image src={bills} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
-<Image src={billsf} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+<Image src={bills} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+<Image src={billsf} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
 </div>
 <div className="hzc">
-<Image src={billsg} placeholder='blur' alt="aiu" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className='imc'/>
-<Image src={billsh} placeholder='blur' alt="aiu" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className='imc'/>
+<Image src={billsg} placeholder='blur' alt="aiu" width={0} height={0}  sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className='imc'/>
+<Image src={billsh} placeholder='blur' alt="aiu" width={0} height={0}  sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className='imc'/>
 </div>
 <div className='texthz'>  
 <h2>Bill splitter</h2>
@@ -100,8 +100,8 @@ function Spscroll() {
                      
                       <div className="pahz" id='section1'>
                       <div className="hzc">
-                             <Image src={Ssys} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
-                            <Image src={Ssysf} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                             <Image src={Ssys} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                            <Image src={Ssysf} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
                           </div>
                         <div className='texthz'>  
                         <h2>Sales System</h2> 
@@ -111,12 +111,12 @@ function Spscroll() {
                       
                       <div className="pahz" id='section1'>
                       <div className="hzc">
-                             <Image src={Imkids} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                             <Image src={Imkids} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
 
-                            <Image src={Imkidsf} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
+                            <Image src={Imkidsf} placeholder='blur' alt="water" width={0} height={0}  sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>
                           </div>
                           <div className='hzc'>
-                         <Image src={Imkidsg} placeholder='blur' alt="aiu" width={0} height={0}  sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className='imc'/>
+                         <Image src={Imkidsg} placeholder='blur' alt="aiu" width={0} height={0}  sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className='imc'/>
                           </div>
                         <div className='texthz'>  
                         <h2>Imagi Kids</h2>
