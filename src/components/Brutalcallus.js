@@ -21,9 +21,11 @@ function Brutalcallus() {
                 <div className={styles.mu}>
                 <h4>Book a Call</h4>
                 <p>Lear more about us.</p>
+                <a href="https://wa.me/524496082929?text=I%20would%20like%20to%20schedule%20a%20call" target='_blank'>
                 <div className="buttons">
                 <button id="cursor-scale" className="btn"><span></span><p data-start="Get Started!" data-text="Call us!" data-title="Get Started!"></p></button>
                 </div>
+                </a>
                 </div>
             </div>
         </div>

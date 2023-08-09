@@ -14,11 +14,14 @@ function Cards() {
     <h1 className={styles.mlh}>$1000</h1>
         <p className={styles.mlh}>50% to start working</p>
         <div className={styles.lsp}>        </div>
+
+        <a href="https://wa.me/524496082929?text=I%20am%20interested%20in%20the%20Standard%20plan" target='_blank'>
         <div className="buttons">
    <button id="cursor-scale" className="btn"><span></span><p data-start="Get Started!" data-text="Call us!" data-title="Get Started!"></p></button>
 </div>
+        </a>
 
-    <a href=""  className={styles.lik}>
+    <a href="https://wa.me/524496082929?text=I%20would%20like%20to%20schedule%20a%20call" target='_blank'  className={styles.lik}>
     <h4 style={{textAlign:"center"}} >Schedule a call</h4>
     </a>    
 </div>
@@ -54,10 +57,13 @@ function Cards() {
     <h1 className={styles.mlh}>$5000</h1>
         <p className={styles.mlh}>50% to start working</p>
         <div className={styles.lsp}>        </div>
+        <a href="https://wa.me/524496082929?text=I%20am%20interested%20in%20the%20Pro%20plan" target='_blank'>
+
         <div className="buttons">
    <button id="cursor-scale" className="btn"><span></span><p data-start="Get Started!" data-text="Call us!" data-title="Get Started!"></p></button>
 </div>
-    <a href="" className={styles.likp}>
+        </a>
+    <a href="https://wa.me/524496082929?text=I%20would%20like%20to%20schedule%20a%20call" target='_blank' className={styles.likp}>
     <h4 style={{textAlign:"center"}}>Schedule a call</h4>
     </a>    
 </div>
@@ -92,10 +98,13 @@ function Cards() {
     <h1 className={styles.mlh}>$25000</h1>
         <p className={styles.mlh}>50% to start working</p>
         <div className={styles.lsp}>        </div>
+
+        <a href="https://wa.me/524496082929?text=I%20am%20interested%20in%20the%20Entreprise%20plan" target='_blank'>
         <div className="buttons">
    <button id="cursor-scale" className="btn"><span></span><p data-start="Get Started!" data-text="Call us!" data-title="Get Started!"></p></button>
 </div>
-    <a href="" className={styles.likg}>
+        </a>
+    <a href="https://wa.me/524496082929?text=I%20would%20like%20to%20schedule%20a%20call" target='_blank' className={styles.likg}>
     <h4 style={{textAlign:"center"}}>Schedule a call</h4>
     </a>    
 </div>

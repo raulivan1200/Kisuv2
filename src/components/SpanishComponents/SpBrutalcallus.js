@@ -22,9 +22,11 @@ function SpBrutalcallus() {
                     <div className={styles.mu}>
                     <h4>Agendar una llamada</h4>
                     <p>Conoce más.</p>
+                    <a href="https://wa.me/524496082929?text=Estoy%20interesado%20en%20adquirir%20una%20pagina%20web" target='_blank'>
                     <div className="buttons">
                     <button id="cursor-scale" className="btn"><span></span><p data-start="Comencemos" data-text=" ¡Llámanos!" data-title="Comencemos"></p></button>
                     </div>
+                    </a>
                     </div>
                 </div>
             </div>

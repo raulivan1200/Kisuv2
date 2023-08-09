@@ -14,11 +14,13 @@ function Spcards() {
     <h1 className={styles.mlh}>$1000</h1>
         <p className={styles.mlh}>50% de anticipo.</p>
         <div className={styles.lsp}>        </div>
+        <a href="https://wa.me/524496082929?text=Estoy%20interesado%20en%20el%20plan%20Standard" target='_blank'>
         <div className="buttons">
    <button id="cursor-scale" className="btn"><span></span><p data-start="Comencemos" data-text=" ¡Llámanos!" data-title="Comencemos"></p></button>
 </div>
+        </a>
 
-    <a href=""  className={styles.lik}>
+    <a href="https://wa.me/524496082929?text=Quisiera%20agendar%20una%20llamada"  className={styles.lik} target='_blank'>
     <h4 style={{textAlign:"center"}} >Agendar una llamada</h4>
     </a>    
 </div>
@@ -52,10 +54,12 @@ Sitio Responsive a móviles.
     <h1 className={styles.mlh}>$5000</h1>
         <p className={styles.mlh}>50% de anticipo.</p>
         <div className={styles.lsp}>        </div>
+        <a href="https://wa.me/524496082929?text=Estoy%20interesado%20en%20el%20plan%20pro" target='_blank'>
         <div className="buttons">
    <button id="cursor-scale" className="btn"><span></span><p data-start="Comencemos" data-text=" ¡Llámanos!" data-title="Comencemos"></p></button>
 </div>
-    <a href="" className={styles.likp}>
+        </a>
+    <a href="https://wa.me/524496082929?text=Quisiera%20agendar%20una%20llamada" className={styles.likp} target='_blank'>
     <h4 style={{textAlign:"center"}}>Agendar una llamada</h4>
     </a>    
 </div>
@@ -88,10 +92,13 @@ Integración de redes sociales
     <h1 className={styles.mlh}>$25000</h1>
         <p className={styles.mlh}>50% de anticipo.</p>
         <div className={styles.lsp}>        </div>
+
+        <a href="https://wa.me/524496082929?text=Estoy%20interesado%20en%20el%20plan%20Entreprise" target='_blank'>
         <div className="buttons">
    <button id="cursor-scale" className="btn"><span></span><p data-start="Comencemos" data-text=" ¡Llámanos!" data-title="Comencemos"></p></button>
 </div>
-    <a href="" className={styles.likg}>
+        </a>
+    <a href="https://wa.me/524496082929?text=Quisiera%20agendar%20una%20llamada" className={styles.likg} target='_blank' >
     <h4 style={{textAlign:"center"}}>Agendar una llamada</h4>
     </a>    
 </div>
