@@ -7,7 +7,7 @@ function Smbuttons() {
     <h2 className="socialSvg instagramSvg ">Instagram</h2>
   </a>
   
-  <a href="#" target='blank' className="socialContainer atb containerTwo" id='cursor-down'>  
+  <a href="https://wa.me/524496082929" target='blank' className="socialContainer atb containerTwo" id='cursor-down'>  
    <h2 className="socialSvg twitterSvg" >twitter</h2>           
   </a>
 
