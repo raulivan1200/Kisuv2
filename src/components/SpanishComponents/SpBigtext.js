@@ -23,7 +23,7 @@ function Spparabigtxt() {
     <div className={styles.cardana}>
     <p>
           📈 El 57% de los usuarios de internet afirma que no recomendarían un negocio con un sitio web mal diseñado para móviles.
-          <Image placeholder='blur' src={cato} className={styles.im} width={0} height={0} sizes='(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw' ></Image>
+          <Image alt="kisu gato sumi-e" placeholder='blur' src={cato} className={styles.im} width={0} height={0} sizes='(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw' ></Image>
         </p>
     </div>  
   </div>
@@ -32,7 +32,7 @@ function Spparabigtxt() {
     <p>
           📈 El 75% de los consumidores admiten que juzgan la credibilidad de una empresa en función del diseño de su sitio web.
         </p>
-        <Image placeholder='blur' src={catt} className={styles.im} width={0} height={0} sizes='(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw' ></Image>
+        <Image alt="kisu gato sumi-e" placeholder='blur' src={catt} className={styles.im} width={0} height={0} sizes='(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw' ></Image>
     </div>
   </div>
   <div className={styles.c3}>
@@ -40,7 +40,7 @@ function Spparabigtxt() {
     <p>
           📈 Casi el 80% de los clientes dejarían de interactuar con contenido que no se muestra bien en su dispositivo.
         </p>
-    <Image placeholder='blur' src={catr} className={styles.im} width={0} height={0} sizes='(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw' ></Image>
+    <Image alt="kisu gato sumi-e" placeholder='blur' src={catr} className={styles.im} width={0} height={0} sizes='(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw' ></Image>
 
     </div>
   </div>
@@ -49,7 +49,7 @@ function Spparabigtxt() {
     <p>
           📈 Una vez en la página de inicio de una empresa, el 86% de los visitantes desean ver información sobre los productos/servicios de esa empresa.
         </p>
-        <Image placeholder='blur' src={catf} className={styles.im} width={0} height={0} sizes='(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw' ></Image>
+        <Image alt="kisu gato sumi-e" placeholder='blur' src={catf} className={styles.im} width={0} height={0} sizes='(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw' ></Image>
 
     </div>
   </div>
