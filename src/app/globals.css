@@ -441,7 +441,7 @@ button:active {
 /**/
 
 .hod{
-  display: none;
+  display: none !important;
 }
 .hom{
   display: inline;
@@ -506,7 +506,7 @@ button:active {
     display: none !important;
   }
   .hod{
-    display: inline;
+    display: inline !important;
   }
 }
 

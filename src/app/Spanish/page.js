@@ -16,6 +16,19 @@ const Esp = () => {
                 <div style={{position:"relative",height:"100vh",width:"100%"}}>
       <Model/>
       <BigText/>
+       <img
+  src="/mouse.gif"
+  alt="mouse animation"
+  width={100}
+  className="hom"
+  style={{
+    position: "absolute",
+    zIndex: "-9",
+    left: "50%",
+    transform: "translateX(-50%)",
+    bottom: "0",
+  }}
+/>
                 </div>
     <CursorComponent/>
     <Spparabigtxt/>

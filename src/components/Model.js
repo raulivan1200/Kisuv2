@@ -60,7 +60,7 @@ function Pointer({ vec = new THREE.Vector3() }) {
 }
 
 export const Model = () => (
-  <Canvas dpr={[.5,2]} frameloop="demand" style={{ height: "150vh", width: "100%", position: "absolute",zIndex:"99" }}  
+  <Canvas dpr={[.5,2]} frameloop="demand" style={{ height: "100vh", width: "100%", position: "absolute",zIndex:"99" }}  
    gl={{  stencil: false, depth: false, antialias: false }} 
   camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }} 
   onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
