@@ -11,7 +11,7 @@ function Spcards() {
     <p className={styles.mlh}>Landing page.</p>
 <div className={styles.spacex}>
   
-    <h1 className={styles.mlh}>$1000</h1>
+    <h1 className={styles.mlh}>$20000</h1>
         <p className={styles.mlh}>50% de anticipo.</p>
         <div className={styles.lsp}>        </div>
         <a href="https://wa.me/524496082929?text=Estoy%20interesado%20en%20el%20plan%20Standard" target='_blank'>
@@ -51,7 +51,7 @@ Sitio Responsive a móviles.
     <h1 className={styles.mlh}>Pro</h1>
     <p className={styles.mlh}>Multipage.</p>
 <div className={styles.spacex}>
-    <h1 className={styles.mlh}>$5000</h1>
+    <h1 className={styles.mlh}>$30000</h1>
         <p className={styles.mlh}>50% de anticipo.</p>
         <div className={styles.lsp}>        </div>
         <a href="https://wa.me/524496082929?text=Estoy%20interesado%20en%20el%20plan%20pro" target='_blank'>
@@ -89,7 +89,7 @@ Integración de redes sociales
     <h1 className={styles.mlh}>Entreprise</h1>
     <p className={styles.mlh}>Tiendas y Sistemas.</p>
 <div className={styles.spacex}>
-    <h1 className={styles.mlh}>$25000</h1>
+    <h1 className={styles.mlh}>$100000</h1>
         <p className={styles.mlh}>50% de anticipo.</p>
         <div className={styles.lsp}>        </div>
 
