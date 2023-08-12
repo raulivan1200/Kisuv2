@@ -23,7 +23,7 @@
   overflow: hidden !important;
   justify-content: center;
   align-items: center;
-  font-size: 11em;
+  font-size: 20em !important;
   display: flex;
   flex-direction: column;
   animation: fontChange 2s infinite;

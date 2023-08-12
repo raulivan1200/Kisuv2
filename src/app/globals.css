@@ -2,7 +2,16 @@ html {
   overflow-y: scroll;
   -webkit-overflow-scrolling: none;
 }
-
+.horizontalbar{
+  background-color: var(--tb);
+  height: 2px;
+  width: 40px;
+  top: 0;
+  display: flex;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  position: absolute;
+}
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */

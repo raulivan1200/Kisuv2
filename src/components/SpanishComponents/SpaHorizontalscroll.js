@@ -18,10 +18,12 @@ import woffg from "../../../public/Portfolio/wofflesdetail.jpg"
 
 function Spscroll() {
   const stickySectionsRef = useRef([]);
+  const progressBarRef = useRef(null);
 
   useEffect(() => {
     // Function to handle the scroll event
     const handleScroll = () => {
+      
       stickySectionsRef.current.forEach((section) => {
         const offsetTop = section.parentElement.offsetTop;
         const scrollSection = section.querySelector('.scroll_section');
@@ -33,7 +35,9 @@ function Spscroll() {
         const easing = 'ease-out';
         scrollSection.style.transform = `translate3d(${-percentage * 100}vw, 0, 0)`;
         scrollSection.style.transition = `transform 0.2s ${easing}`;
-
+        const progressBar = progressBarRef.current;
+        progressBar.style.width = `${percentage * 10.5}%`;
+        progressBar.style.transition = `width 0.2s ${easing}`;
       });
     };
 
@@ -60,8 +64,9 @@ function Spscroll() {
           <div className='sticky_parent'>
               <div className='sticky'>
                   <div className='scroll_section'>
-                    <div className='pppphz'>
+                  <div className='horizontalbar' ref={progressBarRef}></div>
 
+                    <div className='pppphz'>
                     <div className="pahz" id='section1'>
                         <div className="hzc">
                         <Image src={woff} alt="water" placeholder='blur'  width={0} height={0} sizes="(max-width: 768px) 480px, (max-width: 1200px) 20vw, (min-width: 1200px) 40vw, "  className="imc"/>

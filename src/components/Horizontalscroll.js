@@ -19,6 +19,7 @@ import woffg from "../../public/Portfolio/wofflesdetail.jpg"
 
 function Scroll() {
   const stickySectionsRef = useRef([]);
+  const progressBarRef = useRef(null);
 
   useEffect(() => {
     // Function to handle the scroll event
@@ -34,7 +35,9 @@ function Scroll() {
         const easing = 'ease-out';
         scrollSection.style.transform = `translate3d(${-percentage * 100}vw, 0, 0)`;
         scrollSection.style.transition = `transform 0.2s ${easing}`;
-
+        const progressBar = progressBarRef.current;
+        progressBar.style.width = `${percentage * 10.5}%`;
+        progressBar.style.transition = `width 0.2s ${easing}`;
       });
     };
 
@@ -61,6 +64,7 @@ function Scroll() {
             <div className='sticky_parent'>
                 <div className='sticky'>
                     <div className='scroll_section'>
+                  <div className='horizontalbar' ref={progressBarRef}></div>
                       <div className='pppphz'>
 
                       <div className="pahz" id='section1'>
